@@ -4,11 +4,14 @@ import { Divider, Form, Input, Label, Header } from "semantic-ui-react";
 const Address = () => {
   const { ceps } = useLocateCep();
 
+  console.log(ceps)
+
   return (
     <>
       <Divider horizontal>Endereço buscado</Divider>
 
       {ceps.cep && (
+
         <div className="Address">
           <Form>
             <Form.Field inline>
